@@ -2,7 +2,6 @@ import Link from "next/link";
 
 // Components
 import { FaPiggyBank } from "react-icons/fa";
-import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 
 type Props = {};
 
@@ -21,22 +20,9 @@ const MainHeader = (props: Props) => {
           </Link>
 
           <div className="inline-flex gap-5 items-center">
-            <Menu>
-              <MenuButton className="hover:text-blue-600 transition duration-300 ease-in-out">
-                About
-              </MenuButton>
-              {/* <Portal> */}
-              <MenuList>
-                <MenuItem>Vigil Media</MenuItem>
-                <MenuItem>Our Team</MenuItem>
-                <MenuItem>Open Closed Tab</MenuItem>
-                <MenuItem>Open File</MenuItem>
-              </MenuList>
-              {/* </Portal> */}
-            </Menu>
-            <Link href={"/coming-soon"}>
+            <Link href={"/about"}>
               <a className="hover:text-blue-600 transition duration-300 ease-in-out">
-                Help
+                About This App
               </a>
             </Link>
           </div>

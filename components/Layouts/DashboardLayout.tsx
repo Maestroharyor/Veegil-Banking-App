@@ -15,10 +15,9 @@ const DefaultLayout = (props: Props) => {
   return (
     <>
       <Metadata title={props.title} metadescription={props.desc} />
-      <MainHeader />
-      <MobileHeader />
-      <div className="min-h-[calc(100vh-58px)] bg-gray-100 ">
-        {props.children}
+      <div className="min-h-[100vh] bg-gray-100 grid grid-cols-1 md:grid-cols-12">
+        <div className="md:col-span-2 bg-white h-full">Hello</div>
+        <div className="md:col-span-10 h-full">{props.children}</div>
       </div>
     </>
   );
